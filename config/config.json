@@ -1,0 +1,8 @@
+{
+  "development": {
+    "REST_API_URL": "https://yr2jbxrp3k.execute-api.ap-northeast-2.amazonaws.com/development/"
+  },
+  "production": {
+    "REST_API_URL": "https://yr2jbxrp3k.execute-api.ap-northeast-2.amazonaws.com/development/"
+  }
+}

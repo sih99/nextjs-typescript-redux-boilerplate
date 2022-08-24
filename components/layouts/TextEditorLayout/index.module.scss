@@ -1,0 +1,30 @@
+@import "styles/base";
+
+.c-text-editor-layout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  & .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    & .side-pannel {
+      position: fixed;
+      height: 100%;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border: solid 1px $gray-300;
+      background-color: $gray-100;
+    }
+  }
+
+  & .main {
+    padding-left: 100px;
+  }
+}

@@ -1,0 +1,12 @@
+@import "styles/base";
+
+.c-sentence-list-item {
+  height: 118px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0;
+  border: solid 1px $gray-300;
+  background-color: $gray-100;
+}

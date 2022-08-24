@@ -1,0 +1,58 @@
+@import "styles/base";
+
+.c-layout {
+  & .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    width: 100%;
+    background: #000000;
+    height: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1100;
+
+    & .container {
+      height: 100%;
+      display: flex;
+      & .logo {
+        width: 160px;
+        height: 60px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+      }
+    }
+  }
+
+  & .side-pannel {
+    position: fixed;
+    z-index: 1000;
+    min-width: 320px;
+    background: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    height: 100%;
+    padding-top: 60px;
+    visibility: hidden;
+    overflow: visible;
+    &.opened {
+      visibility: visible;
+    }
+  }
+
+  & .main {
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    &.opened {
+      padding-left: 320px;
+    }
+  }
+}
